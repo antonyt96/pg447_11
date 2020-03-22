@@ -27,7 +27,7 @@ int main(){
 		cin>>scholars[a].name;
 		
 	
-		//nested loop to add average score for each student 
+		//nested loop to get 4 test scores for all students
 		for(int i=0 ;i<4 ;i++){
 			
 		
@@ -41,11 +41,12 @@ int main(){
 	// loop through students and perform calculations 
 	for (int b =0; b<5; b++){
 		
+			//looping to add total score per student
 			for(int i=0 ;i<4 ;i++){
-			
 			scholars[b].totalScore+=scholars[b].grades[i];
-		}
+			}
 		
+		//getting average score per student
 		scholars[b].averageScore= scholars[b].totalScore/4;
 	}
 	
